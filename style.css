@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rancho&family=Roboto:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: background-color 0.15s;
+}
+
+.navbar{
+    margin-top: -44px;
+    padding: 0 102px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: navbar-drop 0.3s ease-in-out forwards;
+    transition: color 0.15s;
+}
+
+
+.page-name{
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 97px;
+    height: 18px;
+}
+
+.navbar-links{
+    width: 588px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links a{
+    all: unset;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 17px;   
+    transition: color .15s;
+}
+
+.navbar-links a:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.searchbar{
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.50);
+    width: 200px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.15s;
+}
+
+.searchbar svg{
+    display: inline;
+    margin-left: 9px;
+}
+
+.searchbar input{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    margin: 0;
+    background: none;
+    outline: none;
+    display: inline;
+    width: 123px;
+    height: 15px;
+    margin-left: 9px;
+}
+
+.header{
+    margin-left: 102px;
+    width: 864px;
+    margin-top: 49px;
+}
+
+.header-title{
+    all: unset;
+    font-family: Rancho;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    color: white;
+    animation: title-color 0.3s 0.1s ease-in forwards;
+}
+
+.header-subtitle{
+    all: unset;
+    font-family: Inter;
+    font-size: 18px;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    animation: subtitle-color 0.3s 0.15s ease-in forwards;
+}
+
+img{
+    border-radius: 20px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.img-title{
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+}
+
+.image{
+    border-radius: 20px;
+}
+
+.image1{
+    width: 795px;
+    position: absolute;
+    left: -1060px;
+    z-index: 1;
+    animation: image-scroll1 0.3s 0.2s ease forwards;
+}
+
+.img1{
+    width: 795px;
+    height: 632px;
+    background: url('images/your-name.png');
+}
+
+.image2{
+    width: 511px;
+    position: absolute;
+    z-index: 2;
+    left: 1132px;
+    /* left: 572px; */
+    top: 318px;
+    animation: image-scroll2 0.3s 0.3s ease-in-out forwards;
+}
+
+.img2{
+    width: 511px;
+    height: 406px;
+    background: url('images/tokio-ghoul.png');
+}
+
+.image3{
+    height: 416px;
+    position: absolute;
+    z-index: 2;
+    left: 1132px;
+    /* left: 732px; */
+    top: -163px;
+    animation: image-scroll3 0.3s 0.15s ease-out forwards;
+}
+
+.img3{
+    width: 523px;
+    height: 416px;
+    background: url('images/todo.png');
+    background-repeat: no-repeat;
+}
+
+.images{
+    margin-left: 256px;
+    margin-top: 8px;
+    position: relative;
+}
+
+@keyframes image-scroll1{
+    from{
+        left: -1060px;
+    }
+    to{
+        left: 0;
+    }
+}
+
+@keyframes image-scroll2{
+    from{
+        left: 1132px;
+    }
+    to{
+        left: 572px;
+    }
+}
+
+@keyframes image-scroll3{
+    from{
+        left: 1132px;
+    }
+    to{
+        left: 732px;
+    }
+}
+@keyframes title-color{
+    from{
+        color: white;
+    }
+    to{
+        color: #000;
+    }
+}
+@keyframes subtitle-color{
+    from{
+        color: white;
+    }
+    to{
+        color: #D44138;
+    }
+}
+@keyframes navbar-drop{
+    from{
+        margin-top: -44px;
+    }
+    to{
+        margin-top: 44px;
+    }
+}
+
+.body-dark{
+    background: #020430;
+}
+
+.page-name:hover{
+    cursor: pointer;
+}
+
+.title-dark{
+    color: #FFF !important;
+}
+
+.subtitle-dark{
+    color: #D44138 !important;
+}
+
+.navbar-dark p{
+    color: #fff !important;
+}
+.navbar-dark a{
+    color: #fff !important;
+}
+
+.searchbar-dark{
+    background: rgba(255, 255, 255, 0.75) !important;
+}
+
+.img-title-dark{
+    color: rgba(255, 255, 255, 0.60) !important;
+    position: relative;
+}
+
+.img-title-dark::before{
+    background: rgba(255, 255, 255, 0.60) !important;
+}
+
+.img-title-dark::after{
+    background: rgba(255, 255, 255, 0.60) !important;
+
+}
+
+.img-title::before{
+    content: '';
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.15);
+    left: 20px;
+    top: 9px;
+}
+
+.img-title::after{
+    content: '';
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.15);
+    right: 20px;
+    top: 9px;
+}

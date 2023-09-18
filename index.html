@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch English dubbed & subbed Anime</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb9b5e8c67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <p class="page-name">ANIME HOME</p>
+            <div class="navbar-links">
+                <div class="searchbar">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 14L11.0094 11.004M12.6667 7.00001C12.6667 8.5029 12.0697 9.94424 11.007 11.0069C9.94427 12.0697 8.50293 12.6667 7.00004 12.6667C5.49715 12.6667 4.05581 12.0697 2.9931 11.0069C1.9304 9.94424 1.33337 8.5029 1.33337 7.00001C1.33337 5.49712 1.9304 4.05578 2.9931 2.99307C4.05581 1.93037 5.49715 1.33334 7.00004 1.33334C8.50293 1.33334 9.94427 1.93037 11.007 2.99307C12.0697 4.05578 12.6667 5.49712 12.6667 7.00001V7.00001Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" placeholder="Search an anime here">
+                </div>
+                <a href="#">Categories</a>
+                <a href="#">Latest releases</a>
+                <a href="#">My Anime list</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="header">
+            <p class="header-title">Watch Anime From All Genres</p>
+            <p class="header-subtitle">
+                Latest releases 
+                <i style="font-size: 30px; vertical-align: middle; margin-left: 8px;" class="fa-solid fa-angles-right fa-bounce"></i>
+            </p>
+        </div>
+        <div class="images">
+            <div class="image1 image">
+                <div class="img1"></div>
+                <p class="img-title">Slice of Life | Fantasy</p>
+            </div>
+            <div class="image2 image">
+                <div class="img2"></div>
+                <p class="img-title">Dark Fantasy</p>
+            </div>
+            <div class="image3 image">
+                <div class="img3"></div>
+                <p class="img-title">Studio Ghibli</p>
+            </div> 
+        </div>
+    </main>
+</body>
+</html>
+
+<script>
+
+    let page_name = document.getElementsByClassName('page-name')[0];
+    page_name.addEventListener("click", function(){
+
+        document.getElementsByTagName("body")[0].classList.toggle("body-dark");
+        document.getElementsByClassName("header-title")[0].classList.toggle("title-dark");
+        document.getElementsByClassName("navbar")[0].classList.toggle("navbar-dark");
+        document.getElementsByClassName("searchbar")[0].classList.toggle("searchbar-dark");
+
+        let images = document.getElementsByClassName("img-title");
+
+        for(let i=0; i<images.length; i++) {
+            images[i].classList.toggle("img-title-dark");
+        }
+
+    });
+</script>
